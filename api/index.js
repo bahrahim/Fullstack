@@ -13,11 +13,11 @@ app.use(function(req, res, next) {
    });
    
 app.get('/1', function(req, res){
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/firstScreen.html");
 })
 
 app.get('/2', function(req, res){
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/secondScreen.html");
 })
 
 app.post('/api/posts', (req, res) => {

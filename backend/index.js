@@ -21,9 +21,9 @@ io.on("connection", (socket) => {
 
     socket.on("send_command", (data) => {
         socket.broadcast.emit("receiving_command", data);
-    })
+    });
 });
 
 server.listen(3001, () => {
     console.log("Server running on 3001");
-})
+});
